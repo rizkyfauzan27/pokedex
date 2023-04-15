@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: CronosW01-BdDspl;
+    background: url(http://s6.favim.com/orig/150112/background-cold-gif-nature-Favim.com-2380226.gif);
+}
+
+.all {
+    width: 1200px;
+    margin: 40px auto;
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.navbar {
+    background-color: #116466;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    color: white;
+    z-index: 1;
+    width: auto;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.item a {
+    text-decoration:none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.item a:hover {
+    color: yellow;
+}
+
+
+.pokemon a {
+    font-size: 30px;
+    text-shadow: 0px 0px 100px; 
+    animation: animate 2s infinite linear;
+    text-decoration:none;
+}
+
+.pokemon h3 {
+    padding: 12px 0;
+}
+
+@keyframes animate {
+0%,
+100% {
+    color: lawngreen;
+}
+
+25% {
+    color: deeppink;
+}
+
+50% {
+    color: deepskyblue;
+}
+
+75% {
+    color: white;
+}
+}
+
+/* --------------------------------------------- */
+
+.content {
+    height: 800px;
+    background: url(https://img.freepik.com/free-vector/diagonal-motion-lines-white-background_1017-33198.jpg?w=996&t=st=1658033145~exp=1658033745~hmac=3e8c749527181b77c80c7dd360e96eaea278fef808030b15ba58ec852519ac5a);
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.content h1 {
+    padding-top: 55px;
+    text-align: center;
+    font-size: 90px;
+    color: #333;
+}
+
+.container {
+    position: absolute;
+    height: 300px;
+    width: 600px;
+    top: 60px;
+    left: calc(50% - 300px);
+    display: flex;
+    margin-top: 140px;
+}
+
+.card {
+    display: flex;
+    height: 280px;
+    width: 200px;
+    background-color: #edebf0;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+}
+
+.card img {
+    width: 100%;
+}
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+
+.title {
+    color: green;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    margin-top: 190px;
+}
+
+.bar {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: 5px;
+    width: 150px;
+    margin-top: 150px;
+}
+
+.emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+}
+
+.filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+    transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+    width: 120px;
+    transition: 0.4s ease-out;
+}
+
+.banner2 {
+    width: auto;
+    background:url(http://s6.favim.com/orig/150112/background-cold-gif-nature-Favim.com-2380226.gif);
+    background-size: cover;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 0 100px 70px 100px;
+    height: 125px;
+    margin-top: 400px;
+    border-radius: 20px;
+}
+
+.big-text {
+    font-size: 40px;
+    font-weight:800;
+    animation-delay: 1s;
+    word-spacing: 5px;
+}
+.banner2 a {
+    display: inline-block;
+    background: #fff;
+    color: #36465d;
+    text-decoration: none;
+    font-size: 30px;
+    transition: .3s;
+}
+.banner2 a:hover {
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.content2 {
+    height: 1000px;
+}
+
+.banner-area {
+    height: 60vh;
+	background-image: url('https://i.gifer.com/6Xu1.gif');
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    opacity: 0.9;
+}
+
+.banner-area h2 {
+    color: #fff;
+	z-index: 1;
+	padding: 20px 25px;
+	border: 3px solid #fff;
+}
+
+.banner-area::after {
+    content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(121, 141, 133, .6);
+}
+
+.banner {
+	height: 60vh;
+	background-image: url('https://64.media.tumblr.com/ca0454fc7d3296e2a71eabe77eb0bc0f/tumblr_p7nt21Xz8q1v8i1rro3_500.gifv');
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+    opacity: 0.9;
+}
+.banner:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(121, 141, 133, .6);
+}
+.banner h2 {
+	color: #fff;
+	padding: 20px 25px;
+	border: 3px solid #fff;
+    z-index: 1;
+}
+
+.about {
+    text-align: center;
+    height: 100px;
+    color: whitesmoke;
+}
+
+.about h2 {
+    margin: 100px 0 50px 0;
+    font-size: 50px;
+}
+.about p {
+    font-size: 30px;
+    word-spacing: 2px;
+    text-align: center;
+    margin: 0 50px;
+}
+
+.content-banner {
+    display: flex;
+}
+.banner3 {
+    width: 400px;
+    background:url(https://media1.giphy.com/media/8UGGp7rQvfhe63HrFq/giphy.gif);
+    background-size: cover;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 0 100px 70px 100px;
+    height: 125px;
+    margin-top: 400px;
+    border-radius: 20px;
+    opacity: 0.8    ;
+}
+
+.big-text {
+    font-size: 30px;
+    font-weight:800;
+    animation-delay: 1s;
+    word-spacing: 5px;
+}
+.banner3 a {
+    display: inline-block;
+    background: #fff;
+    color: #36465d;
+    text-decoration: none;
+    font-size: 30px;
+    transition: .3s;
+}
+.banner3 a:hover {
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.banner4 {
+    width: 400px;
+    background:url(https://25.media.tumblr.com/df54aa884de35b740feda2d01c842e2f/tumblr_mid1dqv04H1ro7rx4o1_1280.gif);
+    background-size: cover;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 0 100px 70px 100px;
+    height: 125px;
+    margin-top: 400px;
+    border-radius: 20px;
+    opacity: 0.8;
+    color: black;
+}
+
+.big-text {
+    font-size: 40px;
+    font-weight:800;
+    animation-delay: 1s;
+    word-spacing: 5px;
+}
+.banner4 a {
+    display: inline-block;
+    background: #fff;
+    color: #36465d;
+    text-decoration: none;
+    font-size: 30px;
+    transition: .3s;
+}
+.banner4 a:hover {
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+}
+.footer {
+    background-color: rgb(56, 61, 56);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #fff;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.left {
+    margin-left: 70px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.left a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.left a:hover {
+    color: yellow;
+}
+
+.right {
+    margin-right: 70px;
+    font-size: 20px;
+}
+
+.icon a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.icon a :hover {
+    color: yellow;
+}
+
+.middle {
+    font-size: 25px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.middle a {
+    text-decoration: none;
+    color: white;
+}
+
+.middle a:hover {
+    color: yellow;
+}
